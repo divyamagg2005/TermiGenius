@@ -7,7 +7,7 @@ name = "termigenius"
 version = "1.0.0"
 description = "AI-powered natural language to terminal command translator"
 readme = "README.md"
-authors = [{name = "TermiGenius Team", email = "team@termigenius.com"}]
+authors = [{name = "Divyam Aggarwal", email = "divyamagg2005@gmail.com"}]
 license = {text = "MIT"}
 requires-python = ">=3.8"
 classifiers = [
@@ -47,9 +47,9 @@ tui = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/termigenius"
-Repository = "https://github.com/yourusername/termigenius"
-Issues = "https://github.com/yourusername/termigenius/issues"
+Homepage = "https://github.com/divyamagg2005/TermiGenius"
+Repository = "https://github.com/divyamagg2005/TermiGenius"
+Issues = "https://github.com/divyamagg2005/TermiGenius/issues"
 
 [project.scripts]
 termigenius = "termigenius.cli:app"
