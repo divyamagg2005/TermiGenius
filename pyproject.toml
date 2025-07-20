@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "termigenius"
+version = "1.0.0"
+description = "AI-powered natural language to terminal command translator"
+readme = "README.md"
+authors = [{name = "Divyam Aggarwal", email = "divyamagg2005@gmail.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "typer>=0.9.0",
+    "google-generativeai>=0.3.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "pydantic>=2.0.0",
+    "click>=8.0.0",
+    "pyyaml>=6.0.0",
+    "psutil>=5.0.0",
+    "prompt-toolkit>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+chat = [
+    "prompt-toolkit>=3.0.0",
+]
+windows = [
+    "pywin32>=306",
+    "wmi>=1.5.1",
+]
+tui = [
+    "textual>=0.40.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/divyamagg2005/TermiGenius"
+Repository = "https://github.com/divyamagg2005/TermiGenius"
+Issues = "https://github.com/divyamagg2005/TermiGenius/issues"
+
+[project.scripts]
+termigenius = "termigenius.cli:app"
+tg = "termigenius.cli:app" 

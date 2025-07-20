@@ -1,0 +1,56 @@
+{
+  "file_operations": {
+    "templates": {
+      "delete_files": "rm {flags} {files}",
+      "copy_files": "cp {flags} {source} {destination}",
+      "move_files": "mv {source} {destination}",
+      "create_directory": "mkdir {flags} {directory}",
+      "list_files": "ls {flags} {directory}",
+      "find_files": "find {directory} -name {pattern} {action}",
+      "compress": "tar -czf {archive_name} {files}",
+      "extract": "tar -xzf {archive_name}"
+    },
+    "examples": [
+      {"prompt": "delete all PDF files", "command": "rm *.pdf", "explanation": "Removes all PDF files in current directory"},
+      {"prompt": "copy all images to backup folder", "command": "cp *.{jpg,png,gif} backup/", "explanation": "Copies all image files to backup directory"}
+    ]
+  },
+  "system_operations": {
+    "templates": {
+      "process_list": "ps {flags}",
+      "kill_process": "kill {signal} {pid}",
+      "disk_usage": "df {flags}",
+      "memory_usage": "free {flags}",
+      "network_status": "netstat {flags}",
+      "service_status": "systemctl status {service}"
+    },
+    "examples": [
+      {"prompt": "show running processes", "command": "ps aux", "explanation": "Lists all running processes with details"},
+      {"prompt": "check disk space", "command": "df -h", "explanation": "Shows disk usage in human-readable format"}
+    ]
+  },
+  "text_processing": {
+    "templates": {
+      "search_text": "grep {flags} {pattern} {files}",
+      "replace_text": "sed 's/{pattern}/{replacement}/g' {files}",
+      "sort_lines": "sort {flags} {files}",
+      "unique_lines": "uniq {flags} {files}",
+      "count_lines": "wc -l {files}"
+    },
+    "examples": [
+      {"prompt": "find all Python files containing 'import requests'", "command": "grep -r 'import requests' *.py", "explanation": "Searches for 'import requests' in all Python files"}
+    ]
+  },
+  "network_operations": {
+    "templates": {
+      "ping_host": "ping {flags} {host}",
+      "download_file": "wget {flags} {url}",
+      "curl_request": "curl {flags} {url}",
+      "port_scan": "nmap {flags} {host}",
+      "network_info": "ip {command} {flags}"
+    },
+    "examples": [
+      {"prompt": "download file from URL", "command": "wget https://example.com/file.zip", "explanation": "Downloads file from the specified URL"}
+    ]
+  }
+} 

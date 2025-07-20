@@ -1,0 +1,26 @@
+{
+  "critical_patterns": [
+    {"pattern": "rm\\s+-rf\\s+/", "description": "Recursive deletion of root directory", "risk_level": "critical", "block": true},
+    {"pattern": "sudo\\s+rm\\s+-rf", "description": "Forced recursive deletion with sudo", "risk_level": "critical", "block": true},
+    {"pattern": "format\\s+c:", "description": "Windows disk formatting", "risk_level": "critical", "block": true},
+    {"pattern": "dd\\s+if=.*of=/dev/", "description": "Direct disk writing", "risk_level": "critical", "block": true}
+  ],
+  "warning_patterns": [
+    {"pattern": "sudo\\s+", "description": "Elevated privileges required", "risk_level": "medium", "block": false},
+    {"pattern": "rm\\s+.*\\*", "description": "Wildcard deletion", "risk_level": "medium", "block": false},
+    {"pattern": "chmod\\s+777", "description": "Overly permissive file permissions", "risk_level": "medium", "block": false}
+  ],
+  "safe_commands": [
+    "ls", "cat", "head", "tail", "grep", "find", "locate", "which",
+    "echo", "printf", "date", "cal", "uptime", "whoami", "pwd",
+    "history", "alias", "type", "file", "stat", "wc", "sort",
+    "uniq", "cut", "tr", "sed", "awk", "less", "more", "man",
+    "info", "help", "ps", "top", "htop", "df", "du", "free",
+    "git", "python", "python3", "pip", "npm", "node"
+  ],
+  "restricted_paths": [
+    "/etc/passwd", "/etc/shadow", "/etc/sudoers",
+    "/boot/", "/sys/", "/proc/sys/",
+    "C:\\Windows\\System32", "C:\\Windows\\SysWOW64"
+  ]
+} 
