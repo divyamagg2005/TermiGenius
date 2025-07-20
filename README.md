@@ -184,7 +184,37 @@ termigenius run "prompt" --explain
    - All interactions use [Rich](https://github.com/Textualize/rich) for beautiful panels, tables, and spinners.
 
 ---
+Got it! Here’s the updated Search Feature README section that matches your workflow where the user first runs termigenius search and is then prompted for the query:
 
+⸻
+
+### 6. Search Feature (AI-Powered Answer Fetching)
+
+The Search feature in TermiGenius allows you to directly query the Gemini API from your terminal and fetch coding solutions, explanations, or answers.
+
+How It Works
+	•	Run the search command:
+
+termigenius search
+
+
+	•	You will then be prompted to enter your query/problem interactively.
+	•	TermiGenius will fetch the answer from Gemini and display it in your terminal.
+
+⸻
+
+Example Workflow
+
+> termigenius search
+Enter your query: write a bubble sort algorithm in C
+
+Output:
+
+#include <stdio.h>
+...
+
+
+---
 ## 🏗️ Architecture Diagram
 
 ```
