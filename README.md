@@ -1,4 +1,14 @@
-TermiGenius is a productivity tool meant for developers and system administrators. It must not be used to bypass institutional restrictions, including during tests or exams. The author is not responsible for misuse.
+	Disclaimer:
+TermiGenius is an open-source productivity tool designed to assist developers and system administrators by converting natural language into terminal commands.
+
+	This software is not intended to be used for unethical or illegal purposes, including but not limited to:
+		•	Bypassing institutional or organizational restrictions.
+	•	Gaining unfair advantage during tests, exams, or assessments.
+	•	Any activity that violates academic or workplace integrity policies.
+
+	The author of TermiGenius does not condone or encourage any misuse of this tool. Users are solely responsible for how they choose to use TermiGenius. The author will not be held liable for any consequences, damages, or violations arising from unethical or illegal use of this software.
+
+	By using TermiGenius, you agree to comply with all applicable laws, regulations, and institutional policies.
 
 # 🚀 TermiGenius
 
