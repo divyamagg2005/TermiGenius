@@ -1,3 +1,5 @@
+TermiGenius is a productivity tool meant for developers and system administrators. It must not be used to bypass institutional restrictions, including during tests or exams. The author is not responsible for misuse.
+
 # 🚀 TermiGenius
 
 > **AI-powered natural language → PowerShell command translator for Windows**
